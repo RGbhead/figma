@@ -2,7 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+<<<<<<< Updated upstream
     font-family: sans-serif;
+=======
+    font-family: Arial, sans-serif;
+>>>>>>> Stashed changes
 }
 
 body {
@@ -52,6 +56,10 @@ nav {
 .image {
     width: 650px;
     height: 873.44px;
+<<<<<<< Updated upstream
+=======
+    margin: 0px 50px;
+>>>>>>> Stashed changes
 }
 
 .content {
@@ -85,4 +93,181 @@ nav {
     width: 32px;
     height: 32px;
     margin-right: 15px;
+<<<<<<< Updated upstream
+=======
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #191919;
+    color: white;
+    padding: 20px 40px;
+    max-width: 1200px;
+    margin: 20px auto;
+}
+
+.latest-episode-title {
+    font-size: 32px;
+    margin: 0;
+}
+
+.view-all-button {
+    background-color: #1e90ff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.view-all-button:hover {
+    background-color: #1c86ee;
+}
+
+.podcast-episode {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin: 50px 100px;
+}
+
+.episode-image {
+    max-width: 400px;
+    border-radius: 10px;
+    margin-right: 40px;
+}
+
+.episode-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.category {
+    font-size: 18px;
+    color: #ccc;
+    background: #191919;
+    width: 73px;
+    height: 27px;
+    border-radius: 6px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.category2 {
+    font-size: 18px;
+    color: #ccc;
+    background: #191919;
+    width: 136px;
+    height: 27px;
+    border-radius: 6px;
+    line-height: 27px;
+    text-align: center;
+}
+
+.episode-title {
+    font-size: 17px;
+    margin: 10px 0;
+    line-height: 27px;
+    color: #118DA8;
+}
+
+.episode-heading {
+    font-size: 32px;
+    margin: 20px 0;
+}
+
+.episode-description {
+    font-size: 20px;
+    margin: 20px 0;
+    color: #FFFFFFB2
+}
+
+.view-details-button {
+    background-color: #1e90ff;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    text-align: center;
+    font-size: 18px;
+    width: 208px;
+    height: 51px;
+    border-radius: 6px;
+}
+
+.view-details-button:hover {
+    background-color: #1c86ee;
+}
+
+.interface {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+
+.content2 {
+    max-width: 500px;
+    margin-right: 20px;
+}
+
+.button-container {
+    margin-bottom: 20px;
+}
+
+.button2 {
+    background-color: #00aaff;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.button:after {
+    content: '→';
+    color: white;
+    font-size: 24px;
+}
+
+.subtitle {
+    color: #00aaff;
+    margin: 0;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.name {
+    margin: 0;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.description,
+.additional-info {
+    margin: 10px 0;
+    font-size: 1em;
+    line-height: 1.5em;
+}
+
+.image-container {
+    flex-shrink: 0;
+}
+
+.profile-image {
+    width: 650px;
+    height: 743px;
+    gap: 0px;
+    margin: 400px;
+    border-radius: 12px;
+    opacity: 0px;
+>>>>>>> Stashed changes
 }
