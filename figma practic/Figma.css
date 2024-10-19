@@ -2,11 +2,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-<<<<<<< Updated upstream
     font-family: sans-serif;
-=======
     font-family: Arial, sans-serif;
->>>>>>> Stashed changes
 }
 
 body {
@@ -56,10 +53,7 @@ nav {
 .image {
     width: 650px;
     height: 873.44px;
-<<<<<<< Updated upstream
-=======
     margin: 0px 50px;
->>>>>>> Stashed changes
 }
 
 .content {
@@ -93,8 +87,6 @@ nav {
     width: 32px;
     height: 32px;
     margin-right: 15px;
-<<<<<<< Updated upstream
-=======
 }
 
 .header {
@@ -269,5 +261,4 @@ nav {
     margin: 400px;
     border-radius: 12px;
     opacity: 0px;
->>>>>>> Stashed changes
 }
