@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ink.House</title>
     <link rel="stylesheet" href="media.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 
 <body>
@@ -43,13 +44,16 @@
     <div class="filters">
         <h3 class="filters-title">Репродукции</h3>
         <div class="filter-buttons">
-            <button>Франция</button>
-            <button>Германия</button>
-            <button>Англия</button>
+            <button onclick="filterBooks('france')" id="france-btn">Франция</button>
+            <button onclick="filterBooks('germany')" id="germany-btn">Германия</button>
+            <button onclick="filterBooks('england')" id="england-btn">Англия</button>
+            <button onclick="filterBooks('all')" id="all-btn">Все</button>
         </div>
     </div>
+
+    <!--France-->
     <div class="book-row">
-        <div class="book">
+        <div class="book" data-country="france">
             <img src="book1.svg" alt="Книга 1">
             <div class="author">Марсель Руссо</div>
             <div class="title">Охота Амура</div>
@@ -57,7 +61,7 @@
             <div class="price">14 500 руб</div>
             <button class="add-to-cart">В корзину</button>
         </div>
-        <div class="book">
+        <div class="book" data-country="france">
             <img src="book2.svg" alt="Книга 2">
             <div class="author">Анри Селин</div>
             <div class="title">Дама с Собачкой</div>
@@ -65,7 +69,7 @@
             <div class="price">16 500 руб</div>
             <button class="add-to-cart">В корзину</button>
         </div>
-        <div class="book">
+        <div class="book" data-country="france">
             <img src="book3.svg" alt="Книга 3">
             <div class="author">Франсуа Дюпон</div>
             <div class="title">Процедура</div>
@@ -73,7 +77,7 @@
             <div class="price">20 000 руб</div>
             <button class="add-to-cart">В корзину</button>
         </div>
-        <div class="book">
+        <div class="book" data-country="france">
             <img src="book4.svg" alt="Книга 4">
             <div class="author">Луй Детуш</div>
             <div class="title">Роза</div>
@@ -81,7 +85,7 @@
             <div class="price">12 000 руб</div>
             <button class="add-to-cart">В корзину</button>
         </div>
-        <div class="book">
+        <div class="book" data-country="france">
             <img src="book5.svg" alt="Книга 5">
             <div class="author">Франсуа Дюпон</div>
             <div class="title">Птичья Трапеза</div>
@@ -89,12 +93,64 @@
             <div class="price">22 500 руб</div>
             <button class="add-to-cart">В корзину</button>
         </div>
-        <div class="book">
+        <div class="book" data-country="france">
             <img src="book6.svg" alt="Книга 6">
             <div class="author">Пьер Моранж</div>
             <div class="title">Пейзаж с Рыбой</div>
             <div class="description">Цвтеная литография(40x60)</div>
             <div class="price">20 000 руб</div>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+    </div>
+
+    <!--Germany-->
+    <div class="book-row">
+        <div class="book" data-country="germany">
+            <img src="germany/book1.svg" alt="Книга 1">
+            <div class="author">Курт Вернер</div>
+            <div class="title">Над городом</div>
+            <div class="description">Цветная литография (40х60) </div>
+            <div class="price">16 000 руб</div>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="book" data-country="germany">
+            <img src="germany/book2.svg" alt="Книга 2">
+            <div class="author">Макс Рихтер</div>
+            <div class="title">Птенцы</div>
+            <div class="description">Холст, масло (50х80) </div>
+            <div class="price">14 500 руб</div>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="book" data-country="germany">
+            <img src="germany/book3.svg" alt="Книга 3">
+            <div class="author">Мартин Майер</div>
+            <div class="title">Среди листьев</div>
+            <div class="description">Цветная литография (40х60) </div>
+            <div class="price">20 000 руб</div>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="book" data-country="germany">
+            <img src="germany/book4.svg" alt="Книга 4">
+            <div class="author">Герман Беккер</div>
+            <div class="title">Яркая птица</div>
+            <div class="description">Цветная литография (40х60) </div>
+            <div class="price">13 000 руб</div>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="book" data-country="germany">
+            <img src="germany/book5.svg" alt="Книга 5">
+            <div class="author">Вульф Бауэр</div>
+            <div class="title">Дятлы</div>
+            <div class="description">Бумага, акрил (50х80) </div>
+            <div class="price">20 000 руб</div>
+            <button class="add-to-cart">В корзину</button>
+        </div>
+        <div class="book" data-country="germany">
+            <img src="germany/book6.svg" alt="Книга 6">
+            <div class="author">Вальтер Хартманн</div>
+            <div class="title">Большие воды</div>
+            <div class="description">Бумага, акрил (50х80) </div>
+            <div class="price">23 000 руб</div>
             <button class="add-to-cart">В корзину</button>
         </div>
     </div>
@@ -105,8 +161,35 @@
         </div>
     </div>
 
+    <div class="team">
+        <img src="Frame 256.svg">
+    </div>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            filterBooks('france');
+        });
 
+        function filterBooks(country) {
+            const books = document.querySelectorAll('.book');
+            books.forEach(book => {
+                if (book.dataset.country === country || country === 'all') {
+                    book.style.display = 'block';
+                } else {
+                    book.style.display = 'none';
+                }
+            });
 
+            const buttons = document.querySelectorAll('.filter-buttons button');
+            buttons.forEach(button => {
+                button.classList.remove('active');
+            });
+
+            const activeButton = document.getElementById(`${country}-btn`);
+            if (activeButton) {
+                activeButton.classList.add('active');
+            }
+        }
+    </script>
 </body>
 
 </html>
